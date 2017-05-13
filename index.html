@@ -3,40 +3,25 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <head>
-    <title>QNimate Slider</title>
+    <title>Animated Book By Lisna</title>
     <link href="style.css" type="text/css" rel="stylesheet">
 </head>
 <body>
     <div class="slider-holder">
+        <span id="slider-image-1"></span>
+        <span id="slider-image-2"></span>
+        <span id="slider-image-3"></span>
         <div class="image-holder">
             <img src="cover.svg" class="slider-image" width="800" height="400" />
             <img src="page1.svg" class="slider-image" width="800" height="400"/>
             <img src="3.jpg" class="slider-image" />
         </div>
         <div class="button-holder">
-        	<button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
-            <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+        	<a href="#slider-image-1"><button class="w3-button w3-black w3-display-left">&#10094;</button></a>
+            <a href="#slider-image-2"><button class="w3-button w3-black w3-display-right" >&#10095;</button></a>
+            <a href="#slider-image-3" class="slider-change"></a>
+            
         </div>
     </div>
-    <script>
-		var slideIndex = 1;
-		showDivs(slideIndex);
-
-		function plusDivs(n) {
-  		showDivs(slideIndex += n);
-		}
-
-		function showDivs(n) {
-  			var i;
-  			var x = document.getElementsByClassName("slider-image");
-  			if (n > x.length) {slideIndex = 1}    
-  			if (n < 1) {slideIndex = x.length}
-  			for (i = 0; i < x.length; i++) {
-     		x[i].style.display = "none";  
-  		}
-  		x[slideIndex-1].style.display = "block";  
-		}
-	</script>
 </body>
 </html>
-<
