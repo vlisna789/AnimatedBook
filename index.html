@@ -13,11 +13,14 @@
         <span id="slider-image-3"></span>
         <div class="image-holder">
             <img src="cover.svg" class="slider-image" width="800" height="400" />
-            <img src='pageOne.svg' onmouseover="src='ppartTwo.svg'" onmouseout="src='pageOne.svg'" class="slider-image w3-animate-right" width="800" height="400"/>
+            <img src='pageOneMore.svg' onmouseover="src='ppartTwo.svg'" onmouseout="src='pageOneMore.svg'" class="slider-image w3-animate-right" width="800" height="400"/>
             <div class="slider-image w3-animate-right">
   				<img class="mySlides" src="socksOne.svg" width="800" height="400">
   				<img class="mySlides" src="socksTwo.svg" width="800" height="400">
   				<img class="mySlides" src="socksThree.svg" width="800" height="400">
+			</div>
+			<div class="slider-image w3-animate-right">
+				<img src='facebookOne.svg' width="800" height="400"/>
 			</div>
         </div>
         <div class="button-holder">
@@ -48,19 +51,6 @@
   				x[slideIndex-1].style.display = "block";  
 		}
 	</script>
-    <script type="text/javascript" >
-    var myIndex = 1;
-    	function back() {
-    		display.src = "slider-image-" + myIndex; 
-      		myIndex--; 
-    	}
-
-    	function next() {
-      		display.src = "slider-image-" + myIndex; 
-      		myIndex++; 
-    	}
-   
-    </script>
     <script>
 		var myIndex = 0;
 		carousel();
